@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Registration</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    body {
+      background: linear-gradient(to right, rgb(192, 192, 192), rgb(192, 192, 192));
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      color: #333333;
+    }
+    h2 {
+      text-align: center;
+      color: rgb(255, 0, 128);
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background-color: rgb(192, 192, 192);;
+      border-color: rgb(192, 192, 192);;
+    }
+    .btn-primary:hover {
+      background-color: rgb(192, 192, 192);;
+      border-color: rgb(192, 192, 192);;
+    }
+    .btn-secondary {
+      background-color: #f8f9fa;
+      color: #333333;
+    }
+    .btn-secondary:hover {
+      background-color: #e2e6ea;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Books Registration</h2>
+      <form action="registerservlet" method="post">
+        <div class="mb-3">
+          <label for="bookname" class="form-label">Book Name</label>
+          <input
+            type="text"
+            id="bookname"
+            name="bookname"
+            class="form-control"
+            placeholder="Enter book name"
+            required
+          >
+        </div> <br><br>
+        <div class="mb-3">
+          <label for="bookedition" class="form-label">Book Edition</label>
+          <input
+            type="text"
+            id="bookedition"
+            name="bookedition"
+            class="form-control"
+            placeholder="Enter book edition"
+            required
+          >
+        </div><br> <br>
+        <div class="mb-3">
+          <label for="bookprice" class="form-label">Book Price</label>
+          <input
+            type="text"
+            id="bookprice"
+            name="bookprice"
+            class="form-control"
+            placeholder="Enter book price"
+            required
+          >
+        </div><br> <br>
+        <div class="d-grid gap-2">
+          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="reset" class="btn btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/di
